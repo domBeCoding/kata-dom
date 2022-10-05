@@ -7,6 +7,6 @@ public class StarTreeTopper extends Decorator{
     }
     @Override
     public String decorate(){
-        return super.decorate() + " with a StarTreeTopper";
+        return super.decorate() + " decorated with a StarTreeTopper";
     }
 }
