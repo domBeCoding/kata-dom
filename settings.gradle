@@ -1,0 +1,3 @@
+rootProject.name = 'kata-with-dom'
+include 'design-patterns'
+
