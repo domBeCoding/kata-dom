@@ -1,4 +1,6 @@
-package com.kata.katawithdom.decorator;
+package com.kata.katawithdom.decorator.decorators;
+
+import com.kata.katawithdom.decorator.ChristmasTree;
 
 public class Bauble extends Decorator {
 
@@ -9,6 +11,6 @@ public class Bauble extends Decorator {
 
     @Override
     public String decorate(){
-        return super.decorate() + " decorated with a bauble";
+        return super.decorate() + " and a bauble";
     }
 }

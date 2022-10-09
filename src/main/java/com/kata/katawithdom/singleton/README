@@ -1,0 +1,12 @@
+Singleton
+
+Type:
+Creational Design Pattern
+
+High level:
+Ensures that class has only one instance
+
+Consists of:
+- Contains 1 Publisher class which updates subcribers of any changes
+- Contains common observer interface
+- Contains observer implementations classes

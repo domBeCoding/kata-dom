@@ -1,0 +1,15 @@
+Decorator
+
+Type:
+Structural Design Pattern
+
+High level:
+adds new behaviour to objects by placing them in special wrappers.
+
+Consists of:
+- Contains an Interface of object to be created
+- Implementation of Object to be decorated
+- Contains Decorator with basic which:
+    - Contains object to be decorated
+    - A method to be decorated
+- Decorator objects that extends Decorator class

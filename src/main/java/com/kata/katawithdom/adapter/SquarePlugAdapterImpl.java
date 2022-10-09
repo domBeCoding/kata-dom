@@ -11,7 +11,6 @@ public class SquarePlugAdapterImpl extends CirclePlug implements SquarePlugAdapt
 
     @Override
     public double getRadius() {
-//        System.out.println(squarePlug.getWidth() * Math.sqrt(2) / 2);
         return squarePlug.getWidth() * Math.sqrt(2) / 2;
     }
 }

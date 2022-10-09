@@ -9,7 +9,7 @@ public class CircleHole {
     }
 
     public boolean fits(CirclePlug circlePlug) {
-        return (radius >= circlePlug.getRadius());
+        return (circlePlug.getRadius() <= radius);
     }
 
     public int getRadius() {

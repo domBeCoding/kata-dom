@@ -1,0 +1,12 @@
+State
+
+Type:
+Behavioural Design Pattern
+
+High level:
+Lets object alter its behaviour when its internal state changes
+
+Consists of:
+- Object
+- 1 abstract class with common methods
+- States which extend abstract class

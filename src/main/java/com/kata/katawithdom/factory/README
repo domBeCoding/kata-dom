@@ -1,0 +1,13 @@
+Factory
+
+Type:
+Creational Design Pattern
+
+High level:
+One class that contains a method to return an Object specified
+
+Consists of:
+- Contains 1 factory class that instantiates Objects
+- Contains interface with common methods
+- Contains classes which implement interface classes,
+  each method implemented differently

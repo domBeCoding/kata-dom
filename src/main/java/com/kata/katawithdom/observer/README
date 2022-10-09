@@ -1,0 +1,12 @@
+Observer
+
+Type:
+Behavioural Design Pattern
+
+High level:
+Define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing
+
+Consists of:
+- Contains 1 Publisher class which updates subcribers of any changes
+- Contains common observer interface
+- Contains observer implementations classes

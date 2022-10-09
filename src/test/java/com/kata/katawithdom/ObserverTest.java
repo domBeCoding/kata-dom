@@ -13,12 +13,12 @@ public class ObserverTest {
     NewsAgency newsAgency;
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         newsAgency = new NewsAgency();
     }
 
     @Test
-    public void test123(){
+    public void observersShouldReturnLatestNews() {
         SkyChannel skyChannel = new SkyChannel();
         BbcChannel bbcChannel = new BbcChannel();
         ItvChannel itvChannel = new ItvChannel();

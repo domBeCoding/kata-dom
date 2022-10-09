@@ -1,0 +1,12 @@
+Strategy
+
+Type:
+Behavioural Design Pattern
+
+High level:
+Lets you define a family of algorithms in separate classes.
+
+Consists of:
+- Common Strategy interface with common method
+- Strategies with different algorithms
+- Context class to store the strategy

@@ -1,0 +1,12 @@
+Adapter
+
+Type:
+Structural
+
+High level:
+Allows objects with incompatible interface to collaborate
+
+Consists of:
+- Contains an inflexible class
+- Contains an Adapter interface
+- Class that implements Adapter, adds onto inflexible class to make it more flexible.
