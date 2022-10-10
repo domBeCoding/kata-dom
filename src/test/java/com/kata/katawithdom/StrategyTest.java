@@ -34,22 +34,16 @@ public class StrategyTest {
 
     @Test
     public void calculateTimeDurationForUberCar(){
-        navigationApp.setNavigationStrategy(new Land(200, 40, 100));
-        int timeDuration = navigationApp.calculateTime();
-        System.out.println(timeDuration);
+
     }
 
     @Test
     public void calculateTimeDurationForUberBoat(){
-        navigationApp.setNavigationStrategy(new Water(3000, 60, 40, 40));
-        int timeDuration = navigationApp.calculateTime();
-        System.out.println(timeDuration);
+
     }
 
     @Test
     public void calculateTimeForUberHelicopter(){
-        navigationApp.setNavigationStrategy(new Air(5000, 100, 30));
-        int timeDuration = navigationApp.calculateTime();
-        System.out.println(timeDuration);
+
     }
 }
