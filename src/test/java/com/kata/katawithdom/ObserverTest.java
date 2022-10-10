@@ -19,17 +19,6 @@ public class ObserverTest {
 
     @Test
     public void observersShouldReturnLatestNews() {
-        SkyChannel skyChannel = new SkyChannel();
-        BbcChannel bbcChannel = new BbcChannel();
-        ItvChannel itvChannel = new ItvChannel();
-        newsAgency.addObserver(skyChannel);
-        newsAgency.addObserver(bbcChannel);
-        newsAgency.addObserver(itvChannel);
 
-        newsAgency.updateNews("The Queen has passed away");
-
-        Assertions.assertEquals("The Queen has passed away", skyChannel.getNews());
-        Assertions.assertEquals("The Queen has passed away", bbcChannel.getNews());
-        Assertions.assertEquals("The Queen has passed away", itvChannel.getNews());
     }
 }

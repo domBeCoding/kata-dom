@@ -13,24 +13,5 @@ public class StateTest {
     @Test
     public void phoneStateShouldChange() {
 
-        phone.getState();
-
-        Assertions.assertThat(phone.getState().getClass())
-                .isEqualTo(OffState.class);
-
-        phone.getState().onHomeButton();
-
-        Assertions.assertThat(phone.getState().getClass())
-                .isEqualTo(LockedState.class);
-
-        phone.getState().onHomeButton();
-
-        Assertions.assertThat(phone.getState().getClass())
-                .isEqualTo(ReadyState.class);
-
-        phone.getState().onPowerButton();
-
-        Assertions.assertThat(phone.getState().getClass())
-                .isEqualTo(OffState.class);
     }
 }
