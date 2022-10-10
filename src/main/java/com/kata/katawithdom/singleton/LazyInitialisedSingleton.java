@@ -6,7 +6,7 @@ public class LazyInitialisedSingleton {
 
     private LazyInitialisedSingleton() {}
 
-    public static LazyInitialisedSingleton getSingleton() {
+    public static synchronized LazyInitialisedSingleton getSingleton() {
         if(lazyInitialisedSingleton == null){
             lazyInitialisedSingleton = new LazyInitialisedSingleton();
         }

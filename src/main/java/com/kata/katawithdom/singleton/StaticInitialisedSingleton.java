@@ -8,6 +8,7 @@ public class StaticInitialisedSingleton {
 
     static{
         staticInitalisedSingleton = new StaticInitialisedSingleton();
+        System.out.println("static block is called");
     }
 
     public static StaticInitialisedSingleton getStaticInitalisedSingleton() {

@@ -1,7 +1,7 @@
 Adapter
 
 Type:
-Structural
+Structural Design Pattern
 
 High level:
 Allows objects with incompatible interface to collaborate

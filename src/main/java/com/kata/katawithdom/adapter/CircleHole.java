@@ -15,6 +15,4 @@ public class CircleHole {
     public int getRadius() {
         return radius;
     }
-
-
 }

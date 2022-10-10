@@ -26,34 +26,29 @@ class SingletonTest {
     @Test
     public void assertStaticLazyInitialisedSingletonTest() {
         StaticInitialisedSingleton singleton1 = StaticInitialisedSingleton.getStaticInitalisedSingleton();
-        StaticInitialisedSingleton singleton2 = StaticInitialisedSingleton.getStaticInitalisedSingleton();
+        StaticInitialisedSingleton singleton2 =StaticInitialisedSingleton.getStaticInitalisedSingleton();
         Assertions.assertEquals(singleton1, singleton2);
     }
 
     @Test
     public void givenASingleton_whenNameIsSet_ObjectsAreEqual(){
-
         Person person1 = (Person) applicationContext.getBean("personSingleton");
         Person person2 = (Person) applicationContext.getBean("personSingleton");
 
-        person1.setName("Carolyn");
-        String actualName = person2.getName();
+        person1.setName("Dominic");
+        String name = person2.getName();
 
-        Assertions.assertEquals("Carolyn", actualName);
+        Assertions.assertEquals("Dominic", name);
     }
 
     @Test
     public void givenAUniquePerson_whenNameIsSet_ObjectsAreNotEqual(){
-
         UniquePerson person1 = (UniquePerson) applicationContext.getBean("uniquePerson");
         UniquePerson person2 = (UniquePerson) applicationContext.getBean("uniquePerson");
 
-        person1.setName("Carolyn");
-        person2.setName("Dominic");
+        person1.setName("Dominic");
+        person2.setName("Carolyn");
 
-        Assertions.assertNotEquals("Carolyn", person2.getName());
-        Assertions.assertEquals("Carolyn", person1.getName());
-        Assertions.assertEquals("Dominic", person2.getName());
+        Assertions.assertNotEquals(person1.getName(), person2.getName());
     }
-
 }
