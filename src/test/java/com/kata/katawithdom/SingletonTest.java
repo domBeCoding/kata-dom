@@ -1,6 +1,7 @@
 package com.kata.katawithdom;
 
 import com.kata.katawithdom.singleton.LazyInitialisedSingleton;
+import com.kata.katawithdom.singleton.StaticInitialisedSingleton;
 import com.kata.katawithdom.singleton.model.Person;
 import com.kata.katawithdom.singleton.model.UniquePerson;
 import org.junit.jupiter.api.Assertions;
@@ -24,8 +25,8 @@ class SingletonTest {
 
     @Test
     public void assertStaticLazyInitialisedSingletonTest() {
-        LazyInitialisedSingleton singleton1 = LazyInitialisedSingleton.getSingleton();
-        LazyInitialisedSingleton singleton2 = LazyInitialisedSingleton.getSingleton();
+        StaticInitialisedSingleton singleton1 = StaticInitialisedSingleton.getStaticInitalisedSingleton();
+        StaticInitialisedSingleton singleton2 = StaticInitialisedSingleton.getStaticInitalisedSingleton();
         Assertions.assertEquals(singleton1, singleton2);
     }
 
