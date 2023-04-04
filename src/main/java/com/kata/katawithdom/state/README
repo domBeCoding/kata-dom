@@ -10,3 +10,4 @@ Consists of:
 - Object
 - 1 abstract class with common methods
 - States which extend abstract class
+- Common methods will differ depending on state
